@@ -24,10 +24,10 @@ public class MainActivity : MainActivityViewProtocol() {
             // Setup presenter
             setToastProcessButton = {
                 it?.let {
-                    Toast.makeText(requireContext(), it.toString(), Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(), it.toString(), Toast.LENGTH_SHORT).show()
                     return@let
                 }.also {
-                    Toast.makeText(requireContext(), "check Data", Toast.LENGTH_LONG).show()
+                    Toast.makeText(requireContext(), "Please check data again!", Toast.LENGTH_SHORT).show()
                 }
             }
         }
